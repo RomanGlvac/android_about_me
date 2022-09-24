@@ -7,4 +7,6 @@
         Mauris pulvinar mi quis consectetur congue. Integer vehicula vehicula vestibulum. Pellentesque et aliquam nulla.
         Duis ex lorem, accumsan in tincidunt ac, porttitor id metus.</string>
     <string name="yellow_star_image_desc">An image of a yellow star.</string>
+    <string name="nicknameHint">What is your nickname?</string>
+    <string name="doneButtonText">Done</string>
 </resources>
