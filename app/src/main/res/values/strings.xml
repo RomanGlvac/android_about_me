@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">About Me</string>
+    <string name="name">Roman Glvac</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget imperdiet eros, in cursus est.
+        Vestibulum elit leo, eleifend vel dignissim a, venenatis nec lorem. Integer tristique diam ipsum.
+        Maecenas eget commodo risus. Proin orci nunc, volutpat a convallis at, efficitur at libero. Vivamus ut blandit augue.
+        Mauris pulvinar mi quis consectetur congue. Integer vehicula vehicula vestibulum. Pellentesque et aliquam nulla.
+        Duis ex lorem, accumsan in tincidunt ac, porttitor id metus.</string>
+    <string name="yellow_star_image_desc">An image of a yellow star.</string>
+</resources>
