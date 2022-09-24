@@ -14,12 +14,15 @@ import com.example.android.aboutme.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding : ActivityMainBinding
+    private val name = MyName("Roman Glvac")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        // 'binging.myName' refers to the 'myName' variable defined in the layout file.
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
+        binding.myName = name
 
         binding.doneButton.setOnClickListener{
             addNickname(it)
@@ -30,10 +33,14 @@ class MainActivity : AppCompatActivity() {
 
         binding.apply {
             nicknameEdit.visibility = View.GONE
-            invalidateAll()
             nicknameText.visibility = View.VISIBLE
             doneButton.visibility = View.GONE
-            nicknameText.text = binding.nicknameEdit.text
+            //nicknameText.text = binding.nicknameEdit.text
+            name.nickname = nicknameEdit.text.toString()
+
+            // Calling 'invalidateAll' ensures all references to members of data classes
+            // are updated in the UI as well.
+            invalidateAll()
         }
 
         // Automatically hiding keyboard after clicking 'Done' button.

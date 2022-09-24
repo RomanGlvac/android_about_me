@@ -2,6 +2,13 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="myName"
+            type="com.example.android.aboutme.MyName" />
+    </data>
+
 <LinearLayout
 
     android:orientation="vertical"
@@ -12,7 +19,7 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/name"
+        android:text="@={myName.name}"
         android:textAlignment="center"
         style="@style/nameStyle" />
 
@@ -42,7 +49,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAlignment="center"
-        android:visibility="gone" />
+        android:visibility="gone"
+        android:text="@={myName.nickname}"/>
 
     <ImageView
         android:id="@+id/star_image"
